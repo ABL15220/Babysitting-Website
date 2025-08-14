@@ -1,0 +1,302 @@
+/* ==== IMPORTS & RESET ==== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffaf6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ==== HEADER ==== */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, #ff9a8b, #ff6a88, #ff99ac);
+    color: white;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+.subtitle {
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 1rem;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+/* ==== INTRO ==== */
+.intro {
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #fff1e6, #ffe5ec);
+}
+
+.intro-header {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+.intro-header h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.intro-header p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.intro-profiles {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.profile {
+    flex: 1 1 300px;
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.profile:hover {
+    transform: translateY(-5px);
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.8rem;
+}
+
+.profile h3 {
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.profile p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.profile ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile ul li {
+    padding: 0.3rem 0;
+}
+
+/* ==== SERVICES ==== */
+.services {
+    padding: 3rem 2rem;
+    background-color: #e0f7fa;
+    text-align: center;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.service-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    max-width: 250px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px) scale(1.03);
+}
+
+.service-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+/* ==== HORAIRES ==== */
+.horaires {
+    padding: 3rem 2rem;
+    background-color: #fff1e6; /* fond distinct */
+    margin-bottom: 2rem; /* espace avec la section suivante */
+    border-radius: 1rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+.horaires h2 {
+    margin-bottom: 1.5rem;
+    color: #444;
+    text-align: center;
+}
+
+.horaires table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.horaires th, .horaires td {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+}
+
+.horaires th {
+    background-color: #ffd6a5;
+}
+
+.horaires tr:nth-child(even) {
+    background-color: #fff1e6;
+}
+
+/* ==== TARIFS ==== */
+.tarifs {
+    padding: 3rem 2rem;
+    background-color: #e0f7fa; /* fond différent pour distinguer */
+    border-radius: 1rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+}
+
+.tarifs h2 {
+    margin-bottom: 2rem;
+    color: #444;
+    text-align: center;
+}
+
+.price-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem; /* réduit l’écart pour compacter */
+}
+
+.price-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    border-left: 6px solid #a0c4ff;
+    min-width: 100px;
+    max-width: 250px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+}
+
+
+
+/* ==== CONTACT ==== */
+.contact {
+    background-color: #caffbf;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* ==== FOOTER ==== */
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    background-color: #a2d2ff;
+    color: white;
+}
+
+/* ==== ANIMATIONS ==== */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1s forwards;
+}
+
+.zoom-in {
+    opacity: 0;
+    transform: scale(0.95);
+    animation: zoomIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.tutorat-page {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e0f7fa; /* même bleu que la section services */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+#matieres {
+    max-width: 800px;       /* limite la largeur du bloc */
+    margin: 2rem auto;      /* centre horizontalement et espace en haut/bas */
+    text-align: left;       /* aligne le texte à gauche */
+    padding: 2rem;
+    background-color: white; /* met un fond blanc au bloc pour le détacher */
+    border-radius: 1rem;    /* coins arrondis pour le style */
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08); /* un petit relief */
+}
+
+#matieres ul {
+    list-style: disc;
+    margin-left: 1.5rem;    /* décale les puces */
+}
