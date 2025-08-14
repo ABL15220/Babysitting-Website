@@ -300,3 +300,82 @@ footer {
     list-style: disc;
     margin-left: 1.5rem;    /* décale les puces */
 }
+
+/* Spécifique à la page Organisation de Fêtes */
+body.fetes-page {
+    background: linear-gradient(to bottom, #a0c4ff, #f0f8ff);
+}
+
+.fetes-page .content {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.fetes-page .intro p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.fetes-page .image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.fetes-page img {
+    max-width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+.fetes-page img:hover {
+    transform: scale(1.05);
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background: none;
+    color: white; /* adapte selon ton header */
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    display: block;
+    transition: background 0.2s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: #a0c4ff; /* Couleur hover */
+}
